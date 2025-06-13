@@ -1,0 +1,82 @@
+# Site settings
+title: "RasADM Blog"
+description: "Your go-to source for tech news, tutorials, and insights"
+baseurl: ""
+url: "https://rasadm.github.io"
+
+# Author information
+author:
+  name: "RasADM Team"
+  email: "contact@rasadm.com"
+  bio: "Passionate about technology, innovation, and sharing knowledge"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Theme
+theme: minima
+# You can also use remote_theme for GitHub Pages
+# remote_theme: "mmistakes/minimal-mistakes"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+
+# Social links
+social:
+  github: rasadm
+  twitter: rasadm
+  linkedin: rasadm
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "RasADM Team"
+      show_date: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# SEO settings
+lang: en
+timezone: UTC
+
+# Header/Footer
+header_pages:
+  - about.md
+  - contact.md
+
+# Comments (optional - you can uncomment if you want to use Disqus)
+# disqus:
+#   shortname: your-disqus-shortname 
