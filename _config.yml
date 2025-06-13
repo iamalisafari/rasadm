@@ -1,8 +1,8 @@
 # Site settings
 title: "RasADM Blog"
 description: "Your go-to source for tech news, tutorials, and insights"
-baseurl: ""
-url: "https://rasadm.github.io"
+baseurl: "/rasadm"
+url: "https://iamalisafari.github.io"
 
 # Author information
 author:
@@ -50,7 +50,7 @@ exclude:
 
 # Social links
 social:
-  github: rasadm
+  github: iamalisafari
   twitter: rasadm
   linkedin: rasadm
 
